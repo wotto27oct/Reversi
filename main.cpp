@@ -28,7 +28,7 @@ int main() {
 	field_initialize();
 	config_initialize();
 
-	while (remain_field != 0 || piece_num[0] == 0 || piece_num[1] == 0) {
+	while (remain_field != 0 && piece_num[0] != 0 && piece_num[1] != 0) {
 		draw_field();
 
 		if (player[turn] == 0) {
